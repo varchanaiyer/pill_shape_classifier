@@ -19,7 +19,7 @@ def pp_image(img):
     return np.asarray(x)
 
 prediction_list=['capsules',  'oblong',  'other',  'oval',  'round']
-model=load_model('models/model.h5', custom_objects={'relu6': mobilenet.relu6})
+model=load_model('models/model.h5')
 
 camera = pylon.InstantCamera(pylon.TlFactory.GetInstance().CreateFirstDevice())
 
